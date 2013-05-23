@@ -40,8 +40,43 @@ ZSH_THEME="robbyrussell"
 # Which plugins would you like to load? (plugins can be found in ~/.oh-my-zsh/plugins/*)
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
-plugins=(git)
+plugins=(git git-flow)
 
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
+export GROOVY_HOME=/Users/mward/Work/Apps/groovy-2.0.2
+export GRAILS_HOME=/Users/mward/Work/Apps/grails-2.1.1
+export SVN_HOME=/opt/subversion
+export MAVEN_HOME=~/Work/Apps/apache-maven-3.0.4
+export JBOSS_HOME=~/Work/Apps/jboss-as-7.1.0.CR1b
+export TOMCAT_HOME=~/Work/Apps/apache-tomcat-7.0.39
+export NPM_HOME=/usr/local/share/npm
+
+export PATH=$NPM_HOME/bin:$GROOVY_HOME/bin:$GRAILS_HOME/bin:$SVN_HOME/bin:$MAVEN_HOME/bin:/usr/local/bin:/usr/bin:$PATH:$TOMCAT_HOME/bin
+
+# run start_mysql with sudo
+alias start_mysql='sudo /usr/local/mysql/bin/mysqld_safe'
+alias stop_mysql='sudo /usr/local/mysql/bin/mysqladmin shutdown'
+
+# connect to mysql server
+alias mysql=/usr/local/mysql/bin/mysql
+alias mysql_admin=/usr/local/mysql/bin/mysqladmin
+alias mysql_root='mysql -u root'
+alias mysql_ctr="mysql -u ctr -p'ctr' ctr"
+alias mysql_picks="mysql -u picks -p'picks' picks"
+
+alias nas='automount -vc'
+alias sudo_nas='sudo automount -vc'
+alias sudo_unmount_nas='sudo automount -u'
+
+alias ls='ls -G'
+
+alias show_hidden_in_finder_on='defaults write com.apple.finder AppleShowAllFiles TRUE'
+alias show_hidden_in_finder_off='defaults write com.apple.finder AppleShowAllFiles FALSE'
+kill_finders='killall Finder'
+
+alias bby_dev30='ssh -v -i ~/Work/Projects/BestBuy/keys/ca-ssh-keypair.pem ec2-user@ec2-54-245-110-30.us-west-2.compute.amazonaws.com'
+alias bby_dev32='ssh -v -i ~/Work/Projects/BestBuy/keys/ca-ssh-keypair.pem ec2-user@ec2-54-245-110-32.us-west-2.compute.amazonaws.com'
+alias bby_jenkins='ssh -v -i ~/Work/Projects/BestBuy/keys/jenkins-ssh-keypair.pem ec2-user@54.245.238.194'
+
