@@ -45,8 +45,8 @@ plugins=(git git-flow)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export GROOVY_HOME=/Users/mward/Work/Apps/groovy-2.1.6
-export GRAILS_HOME=/Users/mward/Work/Apps/grails-2.2.4
+export GROOVY_HOME=~/Work/Apps/groovy-2.1.6
+export GRAILS_HOME=~/Work/Apps/grails-2.2.4
 export SVN_HOME=/opt/subversion
 export MAVEN_HOME=~/Work/Apps/apache-maven-3.1.0
 export JBOSS_HOME=~/Work/Apps/jboss-as-7.1.0.CR1b
