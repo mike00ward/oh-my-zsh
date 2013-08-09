@@ -45,10 +45,10 @@ plugins=(git git-flow)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export GROOVY_HOME=/Users/mward/Work/Apps/groovy-2.0.2
-export GRAILS_HOME=/Users/mward/Work/Apps/grails-2.1.1
+export GROOVY_HOME=/Users/mward/Work/Apps/groovy-2.1.6
+export GRAILS_HOME=/Users/mward/Work/Apps/grails-2.2.4
 export SVN_HOME=/opt/subversion
-export MAVEN_HOME=~/Work/Apps/apache-maven-3.0.4
+export MAVEN_HOME=~/Work/Apps/apache-maven-3.1.0
 export JBOSS_HOME=~/Work/Apps/jboss-as-7.1.0.CR1b
 export TOMCAT_HOME=~/Work/Apps/apache-tomcat-7.0.39
 export NPM_HOME=/usr/local/share/npm
@@ -80,3 +80,7 @@ alias bby_dev30='ssh -v -i ~/Work/Projects/BestBuy/keys/ca-ssh-keypair.pem ec2-u
 alias bby_dev32='ssh -v -i ~/Work/Projects/BestBuy/keys/ca-ssh-keypair.pem ec2-user@ec2-54-245-110-32.us-west-2.compute.amazonaws.com'
 alias bby_jenkins='ssh -v -i ~/Work/Projects/BestBuy/keys/jenkins-ssh-keypair.pem ec2-user@54.245.238.194'
 
+alias heroku_dev_develop_push='git push heroku-dev develop:master'
+
+### Added by the Heroku Toolbelt
+export PATH="/usr/local/heroku/bin:$PATH"
