@@ -82,5 +82,7 @@ alias bby_jenkins='ssh -v -i ~/Work/Projects/BestBuy/keys/jenkins-ssh-keypair.pe
 
 alias heroku_dev_develop_push='git push heroku-dev develop:master'
 
+alias tcf_mobile_ci='ssh root@192.241.248.176'
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
