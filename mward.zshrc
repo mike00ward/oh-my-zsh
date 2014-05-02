@@ -52,9 +52,10 @@ export MAVEN_HOME=~/Work/Apps/apache-maven-3.1.0
 export JBOSS_HOME=~/Work/Apps/jboss-as-7.1.0.CR1b
 export TOMCAT_HOME=~/Work/Apps/apache-tomcat-7.0.39
 export NPM_HOME=/usr/local/share/npm
-export ANDROID_HOME=/Users/mward/Work/Apps/adt-bundle-mac-x86_64-20131030/sdk
+export ANDROID_HOME=/Users/mward/Work/Apps/adt-bundle-mac-x86_64-20140321/sdk
+export DOCKER_HOST=tcp://localhost:4243
 
-export PATH=$NPM_HOME/bin:$GROOVY_HOME/bin:$GRAILS_HOME/bin:$SVN_HOME/bin:$MAVEN_HOME/bin:/usr/local/bin:/usr/bin:$PATH:$TOMCAT_HOME/bin:$ANDROID_HOME/tools
+export PATH=$NPM_HOME/bin:$GROOVY_HOME/bin:$GRAILS_HOME/bin:$SVN_HOME/bin:$MAVEN_HOME/bin:/usr/local/bin:/usr/bin:$PATH:$TOMCAT_HOME/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
 # run start_mysql with sudo
 alias start_mysql='sudo /usr/local/mysql/bin/mysqld_safe'
