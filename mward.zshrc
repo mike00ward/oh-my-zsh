@@ -45,17 +45,17 @@ plugins=(git git-flow)
 source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
-export GROOVY_HOME=/Users/mward/Work/Apps/groovy-2.2.1
-export GRAILS_HOME=/Users/mward/Work/Apps/grails-2.3.6
 export SVN_HOME=/opt/subversion
-export MAVEN_HOME=~/Work/Apps/apache-maven-3.1.0
+export MAVEN_HOME=~/Work/Apps/apache-maven-3.3.1
 export JBOSS_HOME=~/Work/Apps/jboss-as-7.1.0.CR1b
 export TOMCAT_HOME=~/Work/Apps/apache-tomcat-7.0.39
 export NPM_HOME=/usr/local/share/npm
 export ANDROID_HOME=/Users/mward/Work/Apps/adt-bundle-mac-x86_64-20140321/sdk
-export DOCKER_HOST=tcp://192.168.59.103:2375
+export DOCKER_HOST=tcp://192.168.59.103:2376
+export DOCKER_CERT_PATH=/Users/mward/.boot2docker/certs/boot2docker-vm
+export DOCKER_TLS_VERIFY=1
 
-export PATH=$NPM_HOME/bin:$GROOVY_HOME/bin:$GRAILS_HOME/bin:$SVN_HOME/bin:$MAVEN_HOME/bin:/usr/local/bin:/usr/bin:$PATH:$TOMCAT_HOME/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+export PATH=$NPM_HOME/bin:$SVN_HOME/bin:$MAVEN_HOME/bin:/usr/local/bin:/usr/bin:$PATH:$TOMCAT_HOME/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
 # run start_mysql with sudo
 alias start_mysql='sudo /usr/local/mysql/bin/mysqld_safe'
@@ -89,3 +89,6 @@ alias tcf_mobile_dev='ssh root@api-proxy.net'
 
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
+
+#THIS MUST BE AT THE END OF THE FILE FOR GVM TO WORK!!!
+[[ -s "/Users/mward/.gvm/bin/gvm-init.sh" ]] && source "/Users/mward/.gvm/bin/gvm-init.sh"
