@@ -46,7 +46,7 @@ source $ZSH/oh-my-zsh.sh
 
 # Customize to your needs...
 export SVN_HOME=/opt/subversion
-export MAVEN_HOME=~/Work/Apps/apache-maven-3.3.1
+export M2_HOME=~/Work/Apps/apache-maven-3.3.1
 export JBOSS_HOME=~/Work/Apps/jboss-as-7.1.0.CR1b
 export TOMCAT_HOME=~/Work/Apps/apache-tomcat-7.0.39
 export NPM_HOME=/usr/local/share/npm
@@ -55,7 +55,7 @@ export DOCKER_HOST=tcp://192.168.59.103:2376
 export DOCKER_CERT_PATH=/Users/mward/.boot2docker/certs/boot2docker-vm
 export DOCKER_TLS_VERIFY=1
 
-export PATH=$NPM_HOME/bin:$SVN_HOME/bin:$MAVEN_HOME/bin:/usr/local/bin:/usr/bin:$PATH:$TOMCAT_HOME/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
+export PATH=$NPM_HOME/bin:$SVN_HOME/bin:$M2_HOME/bin:/usr/local/bin:/usr/bin:$PATH:$TOMCAT_HOME/bin:$ANDROID_HOME/tools:$ANDROID_HOME/platform-tools
 
 # run start_mysql with sudo
 alias start_mysql='sudo /usr/local/mysql/bin/mysqld_safe'
