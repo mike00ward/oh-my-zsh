@@ -87,6 +87,8 @@ alias heroku_dev_develop_push='git push heroku-dev develop:master'
 alias tcf_mobile_ci='ssh root@192.241.248.176'
 alias tcf_mobile_dev='ssh root@api-proxy.net'
 
+alias subl='/Applications/Sublime\ Text.app/Contents/SharedSupport/bin/subl'
+
 ### Added by the Heroku Toolbelt
 export PATH="/usr/local/heroku/bin:$PATH"
 
